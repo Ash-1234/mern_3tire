@@ -29,7 +29,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: harshajain/frontend:latest
+        image: harshajain/frontend:new
         imagePullPolicy: Always
         ports:
         - containerPort: 3000
