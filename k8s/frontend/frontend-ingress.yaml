@@ -5,13 +5,13 @@ metadata:
   namespace: default
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
-    nginx.ingress.kubernetes.io/server-alias: "www.qtgem.com"
+    nginx.ingress.kubernetes.io/server-alias: "www.karunaduflavors.com"
     nginx.ingress.kubernetes.io/backend-protocol: "HTTP"
     nginx.ingress.kubernetes.io/proxy-read-timeout: "600"
 spec:
   ingressClassName: nginx
   rules:
-  - host: qtgem.com
+  - host: karunaduflavors.com
     http:
       paths:
       - path: /
@@ -21,7 +21,7 @@ spec:
             name: frontend
             port:
               number: 80
-  - host: www.qtgem.com
+  - host: www.karunaduflavors.com
     http:
       paths:
       - path: /
