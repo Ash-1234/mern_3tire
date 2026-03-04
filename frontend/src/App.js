@@ -18,7 +18,7 @@ import './App.css';
 
 console.log('BACKEND:', process.env.NODE_APP_BACKEND_URL)
 const API = axios.create({
-  baseURL: process.env.NODE_APP_BACKEND_URL || 'https://backend.karunadauflavors.com',
+  baseURL: process.env.NODE_APP_BACKEND_URL || 'http://backend.karunadauflavors.com',
   timeout: 5000,
   headers: { 'Content-Type': 'application/json' }
 });
